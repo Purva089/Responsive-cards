@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #222;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2e2e2e;
+    padding: 60px 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card .icon{
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--clr);
+    transition: 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 4px #2e2e2e;
+}
+
+.card:hover .icon{
+    background-color: var(--clr);
+    border: 2px solid #2e2e2e;
+    box-shadow: 0 0 0 300px var(--clr);
+}
+
+.card .icon i{
+    color: var(--clr);
+    font-size: 2.5rem;
+    transition: 0.5s ease-in-out;
+}
+.card:hover .icon i{
+    color: #2e2e2e;
+}
+
+.card .desc{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.desc h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: 0.5 ease-in-out;
+    color: #fff;
+}
+
+.card:hover .desc h3{
+    color: #2e2e2e;
+    font-weight: 500;
+}
+
+.desc p{
+    margin: 10px 0;
+    color: #777;
+}
+
+.card:hover .desc p{
+    color: #2e2e2e;
+}
+
+.desc a{
+    position: relative;
+    padding: 12px 15px;
+    display: inline-block;
+    margin: 15px 40px;
+    text-decoration: none;
+    color: #2e2e2e;
+    background-color: var(--clr);
+}
+
+.card:hover .desc a{
+    background-color: #2e2e2e;
+    color: var(--clr);
+}
